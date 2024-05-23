@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AB|Eventos</title>
+    <!--bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -28,38 +31,83 @@
 
     <main>
         <!--separo en secciones para poder navergar con vinculos internos-->
-        
         <section id="taller-slack">
             <h3>Talleres de Slackline</h3>
-            <div class="formato-flyer">
-                <img src="../assets/trapeslack_taller.JPG" alt="taller de trapecio y slackline" class="logo-size">
-                <p>Primer edicion del Taller de slackline y trapecio a cargo de <a href="artistas.html#Pablobara">Pablit</a> y 
-                    <a href="artistas.html#Sofitou">Sofi Toubes</a>, en Espacio del Reves, a las 19:00.
-                    Traer agua y ropa cómoda. El taller tendrá un valor de $5000. Hay cupos limitados, no cuelgues!
-                </p>
+            <!--carrusel de talleres-->
+        <div id="carouselExampleCaptions1" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="formato-flyer">
-                <img src="../assets/variete-vm4.jpg" alt="taller slackline villa mitre" class="logo-size">
-                <p class="marg-inf">Taller a la gorra llevado a cabo en cada Variete de Villa Mitre, por el grupo Slackline Bahia Blanca, en la plaza Mitre.
-                </p>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../assets/trapeslack_taller.JPG" class="d-block carousel-size" alt="taller de trapecio y slackline">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4>Taller Acrobatico 1er edicion</h4>
+                  <p>Primer edicion del Taller de slackline y trapecio a cargo de <a href="artistas.html#Pablobara">Pablit</a> y 
+                    <a href="artistas.html#Sofitou">Sofi Toubes</a>, en Espacio del Reves, a las 19:00.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/trapeslack-2.png" class="d-block carousel-size" alt="taller de trapecio, slackline y verticales">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4>Taller acrobatico 2da edicion</h4>
+                  <p>Verticales, slackline y trapecio en la 2da edicion de este taller, con la incorporacion de <a href="artistas.html#Neit">Neit</a> en las paradas de manos</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/variete-vm4.jpg" class="d-block carousel-size" alt="taller slackline villa mitre">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4>Taller Villa Mitre</h4>
+                  <p>Taller a la gorra llevado a cabo en cada Variete de Villa Mitre, por el grupo Slackline Bahia Blanca, en la plaza Mitre.</p>
+                </div>
+              </div>
             </div>
-        </section>
-
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <!--hasta aca el primer carrusel-->
+        <!--carrusel de varietes-->
+        <h3>Varietes y circo</h3>
         <section id="variete-slack">
-            <h3>Variete Villa Mitre</h3>
-            <div class="formato-flyer">
-                <img src="../assets/variete-vm.jpg" alt="variete villa mitre slackline" class="logo-size">
-                <p class="marg-inf">Numero de slackline en esta nueva edicion de la Variete de Villa Mitre, por <a href="artistas.html#Pablobara">Pablit</a>.
-                </p>
-            </div>
-
-            <h3 id="manijientos">Variete Manijienta</h3>
-            <div class="formato-flyer">
-                <img src="../assets/manijientos.jpeg" alt="variete manijienta" class="logo-size">
-                <p class="marg-inf">Variete autogestiva llevada a cabo por artistas de Bahia Blanca, que buscan iniciar un nuevo ciclo de arte callejero, en este caso en un escenario improvisado en el monumento Cesar Milstein, en Rosario y Cuyo, 19:00, a la gorra.
-                    Actuan: <a href="artistas.html#Pablobara">Pablit</a>, <a href="artistas.html#Jona">Jonathan</a>, <a href="artistas.html#Yulian">Yulian</a>, Juliana Perrin, Mila Rochon, Mimoencleta. Sonido e iluminación a cargo de Iara Biagetti.
-                </p>
-            </div>
+            <div id="carouselExampleCaptions2" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/variete-vm.jpg" class="d-block carousel-size" alt="variete villa mitre slackline">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h4>Taller de Slackline</h4>
+                      <p>Numero de slackline y mucho mas en esta nueva edicion de la Variete de Villa Mitre, por <a href="artistas.html#Pablobara">Pablit</a>.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/manijientos.jpeg" class="d-block carousel-size" alt="varite manijientos">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h4>Variete Manijientos</h4>
+                      <p>Variete autogestiva en el monumento Cesar Milstein, 19:00.
+                        Actuan: <a href="artistas.html#Pablobara">Pablit</a>, <a href="artistas.html#Jona">Jonathan</a>, <a href="artistas.html#Yulian">Yulian</a>, Juliana Perrin, Mila Rochon, Mimoencleta. Sonido e iluminación a cargo de Iara Biagetti.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </section>
     </main>
 
@@ -79,5 +127,9 @@
             </ul>
         </div>
     </footer>
+    
+    <!--bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 </html>

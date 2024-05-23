@@ -14,6 +14,7 @@
 
 /*estilo del body*/
 body {
+    font-size: 16px;
     background-image: linear-gradient(to top, #e50067, #00e5d2);
 }
 
@@ -21,10 +22,12 @@ body {
 .margen-izq{
     display: flex;
     align-items: center; /*alineados al centro del contenedor*/
+    height: 100%;
 }
 h1 {
     font-family: 'graf'; /*fuente del titulo*/
-    font-size: 12cap; 
+    font-size: 150px; 
+    margin: 0;
 }
 nav{
     font-family: 'circus';
@@ -34,12 +37,12 @@ nav{
 /*subtitulo comun a todos los archivos excepto index.html*/
 h2{
     font-family: 'circus-text';
-    font-size: 4em;
+    font-size: 64px;
     text-align: center;
 }
 h3 {
     font-family: 'circus';
-    font-size: 2em;
+    font-size: 32px;
 }
 /*Clase para que el menu se vea horizontal y en el margen derecho*/
 .menu {
@@ -143,4 +146,57 @@ h3 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: small;
     display: flex;
+}
+
+/*grids*/
+
+/*nosotros*/
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 300px 300px;
+}
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /*cualquier imagen que se salga del contenedor se tapa*/
+}
+.grid-item img{
+    display: block;
+    margin: auto;
+    width: 90%;
+    height: 90%;
+
+}
+.grid-text {
+    grid-column: 2/5;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.grid-text p {
+    width: 90%;
+    font-size: 20px;
+}
+
+/*carrusel*/
+.carousel-item {
+    height: 650px;
+    width: 100%;
+}
+.carousel-caption{
+    display: flex;
+    justify-content: center;
+    /*bottom: 5%;
+    left: 20%;*/
+}
+.carousel-size {
+    position: relative;
+    /*top: 30%;*/
+    left: 50%; /*mueve un 50% desde su borde izquierdo*/
+    transform: translateX(-50%); /*muevo hacia la izquiera un 50% del tamano de la misma imagen*/
+    height: 500px;
+    width: auto;
 }
