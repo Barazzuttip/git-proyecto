@@ -1,0 +1,146 @@
+/*fuentes*/
+@font-face {
+    font-family: graf;
+    src: url(../assets/snikers.ttf);
+}
+@font-face {
+    font-family: 'circus';
+    src: url(../assets/circusworlddemoregular.ttf);
+}
+@font-face {
+    font-family: 'circus-text';
+    src: url(../assets/electriccircus.ttf);
+}
+
+/*estilo del body*/
+body {
+    background-image: linear-gradient(to top, #e50067, #00e5d2);
+}
+
+/* Header, comun a todos los archivos*/
+.margen-izq{
+    display: flex;
+    align-items: center; /*alineados al centro del contenedor*/
+}
+h1 {
+    font-family: 'graf'; /*fuente del titulo*/
+    font-size: 12cap; 
+}
+nav{
+    font-family: 'circus';
+    border-bottom: 2px solid black;
+}
+
+/*subtitulo comun a todos los archivos excepto index.html*/
+h2{
+    font-family: 'circus-text';
+    font-size: 4em;
+    text-align: center;
+}
+h3 {
+    font-family: 'circus';
+    font-size: 2em;
+}
+/*Clase para que el menu se vea horizontal y en el margen derecho*/
+.menu {
+    list-style-type: none; /*lista sola*/
+    text-align: right;
+}
+
+/*clase menu, elementos li */
+.menu li{
+    display: inline-block;/*los elementos <li> se veran horizontales y se mueven en bloque*/
+    ;
+}
+
+/*clase menu, elementos li a*/
+.menu li a{
+    text-decoration: none;
+}
+
+/*clase para dar tamaño a las imagenes*/
+.logo-size {
+    width: 15%;
+    height: 15%;
+}
+.art-size {
+    width: 25%;
+    height: 25%;
+}
+.lista-descriptiva {
+    list-style-type: none;
+}
+.lista-descriptiva li {
+    font-size: x-large;
+}
+/************/
+/*INDEX.HTML*/
+/************/
+.index-main {
+    display: flex; /*quiero el texto al lado de la imagen*/
+    align-items: start; /*elementos alineados desde el borde superior de la seccion*/
+}
+
+.index-main img{
+    width: 35%;
+    height: 35%;
+}
+.index-main p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+
+/*Clases*/
+/*el menu se muestra en el centro de la pantalla, debajo del titulo, con fuente descargada y alineado*/
+.submenu {
+    list-style-type: none;
+    text-align: center;
+}
+.submenu li {
+    display: inline-block;
+    font-family: 'circus';
+    font-size: large;
+    padding: 1%;
+    
+}
+.submenu li a{
+    text-decoration: none;
+}
+
+/*formato flyer para las clases y talleres*/
+.formato-flyer{
+    display: flex;
+    align-items: center;
+}
+.formato-flyer img{
+    margin-bottom: 20px;
+}
+.formato-flyer p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+}
+
+/*Nosotros*/
+.nosotros-img {
+    height: 20%;
+    width: 20%;
+}
+
+/*imagen del footer*/
+.footer-size {
+    height: 5%;
+    width: 5%;
+}
+/*para la visualizacion del footer*/
+.footer {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid black;
+    margin-top: 10px;
+}
+.footer-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    display: flex;
+}
