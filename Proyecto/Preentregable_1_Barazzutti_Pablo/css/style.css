@@ -34,6 +34,37 @@ nav{
     border-bottom: 2px solid black;
 }
 
+/*boton del nav*/
+.button-style {
+    background-color: transparent;
+    color: black;
+    border: none;
+}
+.button-style:hover {
+    color: #e50067;
+    background-color: rgba(0,0,0,0);
+}
+.button-style:active{
+    color: #e50067  !important; /*por algun motivo prioriza el estilo de bootstrap*/
+    background-color: rgba(0,0,0,0)  !important;
+}
+.button-style.show {
+    color: #e50067;
+    background-color: rgba(0,0,0,0);
+}
+
+.drop-op {
+    background-image: linear-gradient(to top, #e50067, #00e5d2);
+}
+.btn-op {
+    background-color: transparent;
+}
+.btn-op:hover {
+    color: #e50067;
+    background-color: rgba(0,0,0,0.2);
+}
+
+
 /*subtitulo comun a todos los archivos excepto index.html*/
 h2{
     font-family: 'circus-text';
