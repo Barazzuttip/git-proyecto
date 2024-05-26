@@ -41,66 +41,102 @@
         <h2>Artistas</h2>
     </header>   
     <main>
-        <!--artistas-->
-        <section id="Pablobara">
-            <h3>Pablit</h3>
-            <div class="formato-flyer">
-                <img src="../assets/pablobara.jpg" alt="profesor de slackline" class="art-size">
 
-                <!--lista con detalles de cada artista-->
-                <ul id="lista-pablobara" class="lista-descriptiva">
-                    <li><a href="clases.html#clase-slack">Profesor de Slackline</a></li> <!--link a las clases-->
-                    <li><a href="eventos.html#taller-slack">Talleres de Slackline</a></li> <!--link a los eventos-->
-                    <li><a href="eventos.html#variete-slack">Artista circense</a></li> <!--link a las eventos-->
-                    <li><a href="https://www.instagram.com/si.vuela.es.pablit" target="_blank">Contacto</a></li> <!--link a instagram-->
-                </ul>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item" id="pablobara">
+                <h3 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Pablit
+                    </button>
+                </h3>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="formato-flyer">
+                            <img src="../assets/pablobara.jpg" alt="profesor de slackline" class="art-size">
+                            <ul id="lista-pablobara" class="lista-descriptiva">
+                                <li><a href="clases.html#clase-slack">Profesor de Slackline</a></li> <!--link a las clases-->
+                                <li><a href="eventos.html#taller-slack">Talleres de Slackline</a></li> <!--link a los eventos-->
+                                <li><a href="eventos.html#variete-slack">Artista circense</a></li> <!--link a las eventos-->
+                                <li><a href="https://www.instagram.com/si.vuela.es.pablit" target="_blank">Contacto</a></li> <!--link a instagram-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-        
-        <section id="Sofitou">
-            <h3>Sofi Toubes</h3>
-            <div class="formato-flyer">
-                <img src="../assets/sofitou.JPG" alt="profesora de trapecio" class="art-size"> 
-                <ul id="lista-sofiatou" class="lista-descriptiva">
-                    <li><a href="clases.html#clase-trape">Profesora de Trapecio</a></li> <!--link a las clases-->
-                    <li><a href="eventos.html#taller-slack">Talleres de Trapecio</a></li> <!--link a los eventos-->
-                    <li><a href="https://www.instagram.com/sofffffft_" target="_blank">Contacto</a></li> <!--link a instagram-->
-                </ul>
+            <div class="accordion-item" id="sofitou">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Sofi Toubes
+                    </button>
+                </h3>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="formato-flyer">
+                            <img src="../assets/sofitou.JPG" alt="profesora de trapecio" class="art-size"> 
+                            <ul id="lista-sofiatou" class="lista-descriptiva">
+                                <li><a href="clases.html#clase-trape">Profesora de Trapecio</a></li> <!--link a las clases-->
+                                <li><a href="eventos.html#taller-slack">Talleres de Trapecio</a></li> <!--link a los eventos-->
+                                <li><a href="https://www.instagram.com/sofffffft_" target="_blank">Contacto</a></li> <!--link a instagram-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-
-        <section id="Yulian">
-            <h3>Yulian</h3>
-            <div class="formato-flyer">
-                <img src="../assets/yulian.jpg" alt="Yulian" class="art-size">
-                <ul id="lista-yulian" class="lista-descriptiva">
-                    <li><a href="eventos.html#manijientos">Artista circense</a></li> <!--link a eventos-->
-                    <li><a href="https://www.instagram.com/lacolmenacirco" target="_blank">Contacto</a></li> <!--link a instagram-->
-                </ul>
+            <div class="accordion-item" id="yulian">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Yulian
+                    </button>
+                </h3>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="formato-flyer">
+                            <img src="../assets/yulian.jpg" alt="Yulian" class="art-size">
+                            <ul id="lista-yulian" class="lista-descriptiva">
+                                <li><a href="eventos.html#manijientos">Artista circense</a></li> <!--link a eventos-->
+                                <li><a href="https://www.instagram.com/lacolmenacirco" target="_blank">Contacto</a></li> <!--link a instagram-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-
-        <section id="Neit">
-            <h3>Neit</h3>
-            <div class="formato-flyer">
-                <img src="../assets/neit.jpeg" alt="Neit" class="art-size">
-                <ul id="lista-neit" class="lista-descriptiva">
-                    <li><a href="clases.html#clase-verti">Profesor de verticales</a></li> <!--link a eventos-->
-                    <li><a href="https://www.instagram.com/flexibilidad.en.vertical" target="_blank">Contacto</a></li> <!--link a instagram-->
-                </ul>
+            <div class="accordion-item" id="neit">
+                <h3 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Neit
+                    </button>
+                </h3>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="formato-flyer">
+                            <img src="../assets/neit.jpeg" alt="Neit" class="art-size">
+                            <ul id="lista-neit" class="lista-descriptiva">
+                                <li><a href="clases.html#clase-verti">Profesor de verticales</a></li> <!--link a eventos-->
+                                <li><a href="https://www.instagram.com/flexibilidad.en.vertical" target="_blank">Contacto</a></li> <!--link a instagram-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-
-        <section id="Jona">
-            <h3>Jonathan</h3>
-            <div class="formato-flyer">
-                <img src="../assets/jona.jpeg" alt="Jona" class="art-size">
-                <ul id="lista-jona" class="lista-descriptiva">
-                    <li><a href="eventos.html#manijientos">Artista circense</a></li> <!--link a eventos-->
-                    <li><a href="https://www.instagram.com/blazquezjonathan" target="_blank">Contacto</a></li> <!--link a instagram-->
-                </ul>
+            <div class="accordion-item" id="jona">
+                <h3 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Jonathan
+                  </button>
+                </h3>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="formato-flyer">
+                            <img src="../assets/jona.jpeg" alt="Jona" class="art-size">
+                            <ul id="lista-jona" class="lista-descriptiva">
+                                <li><a href="eventos.html#manijientos">Artista circense</a></li> <!--link a eventos-->
+                                <li><a href="https://www.instagram.com/blazquezjonathan" target="_blank">Contacto</a></li> <!--link a instagram-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
     </main>
     <!--footer-->
     <footer class="footer">
