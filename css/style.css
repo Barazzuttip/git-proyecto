@@ -31,6 +31,7 @@
         .grid-container-index .grid-item-index:first-child {
             grid-row: 1/2;
             width: auto;
+            height: 50%;
         }
         .body-titles {
             font-size: smaller;
@@ -41,6 +42,10 @@
         .footer-izq img{
             width: 50%;
             height: 50%;
+        }
+        .carousel-caption {
+            font-size: 0.75rem;
+            position: static;
         }
     }
     
