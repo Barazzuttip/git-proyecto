@@ -84,6 +84,12 @@
             width: 25%;
             height: 25%;
         }
+        .carousel-caption {
+            font-size: 0.75rem;
+            position: static;
+            margin-top: 25px;
+        }
+        
     }
     
 }
