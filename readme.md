@@ -1,2 +1,3 @@
-#Proyecto Barazzutti
-2da entrega del proyecto 
+#PROYECTO BARAZZUTTI - 2DA ENTREGA
+
+Pagina creada para recopilar eventos artisticos, deportivos y circenses en la ciudad de Bahia Blanca
