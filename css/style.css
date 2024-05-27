@@ -33,12 +33,29 @@ nav{
     font-family: 'circus';
     border-bottom: 2px solid black;
 }
+.menu a{
+    color: #999950;
+    padding: 5%;
+    margin: 1%;
+    font-size: 16;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu a:hover{
+    color: #e50067;
+}
 
 /*boton del nav*/
 .button-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: transparent;
-    color: blue;
+    color: #999950;
     border: none;
+    padding: 1%;
+    font-size: 16;
 }
 .button-style:hover {
     color: #e50067;
@@ -126,6 +143,9 @@ h3 {
 
 /*Clases*/
 /*el menu se muestra en el centro de la pantalla, debajo del titulo, con fuente descargada y alineado*/
+.main-style {
+    margin-left: 2%;
+}
 .submenu {
     list-style-type: none;
     text-align: center;
@@ -139,6 +159,10 @@ h3 {
 }
 .submenu li a{
     text-decoration: none;
+    color: #999950;
+}
+.submenu li a:hover{
+    color: #e50067;
 }
 
 /*formato flyer para las clases y talleres*/
@@ -152,6 +176,13 @@ h3 {
 .formato-flyer p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: larger;
+}
+.formato-flyer a {
+    color: #999950;
+    text-decoration: none;
+}
+.formato-flyer a:hover {
+    color: #e50067;
 }
 
 /*Nosotros*/
@@ -178,7 +209,16 @@ h3 {
     font-size: small;
     display: flex;
 }
-
+.footer-der{
+    margin-right: 15px;
+}
+.footer-der a{
+    color: #999950;
+    text-decoration: none;
+}
+.footer-izq {
+    margin-left: 25px;
+}
 /*grids*/
 
 /*nosotros*/
@@ -245,17 +285,43 @@ h3 {
     height: 650px;
     width: 100%;
 }
+.carousel-item a{
+    color: #999950;
+    text-decoration: none;
+}
+.carousel-item a:hover{
+    color: #e50067;
+}
 .carousel-caption{
     display: flex;
     justify-content: center;
-    /*bottom: 5%;
-    left: 20%;*/
 }
 .carousel-size {
     position: relative;
-    /*top: 30%;*/
     left: 50%; /*mueve un 50% desde su borde izquierdo*/
     transform: translateX(-50%); /*muevo hacia la izquiera un 50% del tamano de la misma imagen*/
     height: 500px;
     width: auto;
+}
+
+
+/*acordeon*/
+.accordion-button{
+    background-color: transparent ;
+    color: black ;
+}
+.accordion-button:not(.collapsed){
+    background-color: transparent ;
+    color: black ;
+}
+.accordion-item {
+    background-color: transparent;
+}
+
+.accordion-item a {
+    color: #999950;
+    text-decoration: none;
+}
+.accordion-item a:hover {
+    color: #e50067;
 }
