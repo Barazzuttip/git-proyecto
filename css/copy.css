@@ -1,0 +1,312 @@
+/*fuentes*/
+@font-face {
+    font-family: graf;
+    src: url(../assets/snikers.ttf);
+}
+@font-face {
+    font-family: 'circus';
+    src: url(../assets/circusworlddemoregular.ttf);
+}
+@font-face {
+    font-family: 'circus-text';
+    src: url(../assets/electriccircus.ttf);
+}
+/*responsive*/
+@media only screen and (max-width: 500px) {
+    body {
+        h1 {
+            font-family: 'graf'; /*fuente del titulo*/
+            font-size: 50px; 
+            margin: 0;
+        }
+        .menu a{
+            font-size: 10px;
+        }
+        .submenu a{
+            font-size: 10px;
+        }
+        .button-style{
+            font-size: 10px;
+        }
+        .grid-container-index .grid-item-index:first-child {
+            grid-row: 1/2;
+            width: auto;
+            height: 50%;
+        }
+        .body-titles {
+            font-size: smaller;
+        }
+        h2 {
+            font-size: 32px;
+        }
+        .footer-izq img{
+            width: 50%;
+            height: 50%;
+        }
+        .carousel-caption {
+            font-size: 0.75rem;
+            position: static;
+            margin-top: 25px;
+        }
+    }
+    
+}
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
+    body {
+        h1 {
+            font-family: 'graf'; /*fuente del titulo*/
+            font-size: 80px; 
+            margin: 0;
+        }
+        h2 {
+            font-size: 64px;
+        }
+        .menu a{
+            font-size: 15px;
+        }
+        .button-style{
+            font-size: 15px;
+        }
+        .submenu a{
+            font-size: 16px;
+        }
+        .grid-container-index .grid-item-index:first-child {
+            grid-row: 1/2;
+            width: auto;
+        }
+        .grid-container-index .grid-item-index:nth-child(2){
+        align-items: flex-start;
+        }
+        .body-titles {
+            font-size: 20px;
+        }
+        .footer-izq img{
+            width: 25%;
+            height: 25%;
+        }
+        .carousel-caption {
+            font-size: 0.75rem;
+            position: static;
+            margin-top: 25px;
+        }
+        
+    }
+    
+}
+
+
+
+/*estilo del body*/
+body {
+    font-size: 16px;
+    background-image: linear-gradient(to top, #e50067, #00e5d2);
+}
+
+/* Header, comun a todos los archivos*/
+.margen-izq{
+    display: flex;
+    align-items: center; /*alineados al centro del contenedor*/
+    height: 100%;
+}
+h1 {
+    font-family: 'graf'; /*fuente del titulo*/
+    font-size: 150px; 
+    margin: 0;
+}
+nav{
+    font-family: 'circus';
+    border-bottom: 2px solid black;
+}
+
+/*boton del nav*/
+.button-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: #999950;
+    border: none;
+    padding: 1%;
+    font-size: 16;
+}
+.button-style:hover {
+    color: #e50067;
+    background-color: rgba(0,0,0,0);
+}
+.button-style:active{
+    color: #e50067  !important; /*por algun motivo prioriza el estilo de bootstrap*/
+    background-color: rgba(0,0,0,0)  !important;
+}
+.button-style.show {
+    color: #e50067;
+    background-color: rgba(0,0,0,0);
+}
+
+.drop-op {
+    background-image: linear-gradient(to top, #e50067, #00e5d2);
+}
+.btn-op {
+    background-color: transparent;
+}
+.btn-op:hover {
+    color: #e50067;
+    background-color: rgba(0,0,0,0.2);
+}
+
+
+/*subtitulo comun a todos los archivos excepto index.html*/
+h2{
+    font-family: 'circus-text';
+    font-size: 64px;
+    text-align: center;
+}
+h3 {
+    font-family: 'circus';
+    font-size: 32px;
+}
+
+.art-size {
+    width: 25%;
+    height: 25%;
+}
+.lista-descriptiva {
+    list-style-type: none;
+}
+.lista-descriptiva li {
+    font-size: x-large;
+}
+
+/*Clases*/
+/*el menu se muestra en el centro de la pantalla, debajo del titulo, con fuente descargada y alineado*/
+.main-style {
+    margin-left: 2%;
+}
+.submenu {
+    list-style-type: none;
+    text-align: center;
+}
+.submenu li {
+    display: inline-block;
+    font-family: 'circus';
+    font-size: large;
+    padding: 1%;
+    
+}
+.submenu li a{
+    text-decoration: none;
+    color: #999950;
+}
+.submenu li a:hover{
+    color: #e50067;
+}
+
+/*formato flyer para las clases y talleres*/
+.formato-flyer{
+    display: flex;
+    align-items: center;
+}
+.formato-flyer img{
+    margin-bottom: 20px;
+}
+.formato-flyer p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+}
+.formato-flyer a {
+    color: #999950;
+    text-decoration: none;
+}
+.formato-flyer a:hover {
+    color: #e50067;
+}
+
+/*Nosotros*/
+.nosotros-img {
+    height: 20%;
+    width: 20%;
+}
+
+/*imagen del footer*/
+.footer-size {
+    height: 10%;
+    width: 10%;
+}
+/*para la visualizacion del footer*/
+.footer {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid black;
+    margin-top: 10px;
+}
+.footer-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    display: flex;
+}
+.footer-der{
+    margin-right: 15px;
+}
+.footer-der a{
+    color: #999950;
+    text-decoration: none;
+}
+.footer-izq {
+    margin-left: 25px;
+}
+/*grids*/
+
+/*nosotros*/
+
+
+/*index grid*/
+
+
+.grid-item-index 
+.grid-item-index 
+
+/*carrusel*/
+.carousel-item {
+    height: 650px;
+    width: 100%;
+}
+.carousel-item a{
+    color: #999950;
+    text-decoration: none;
+}
+.carousel-item a:hover{
+    color: #e50067;
+}
+.carousel-caption{
+    display: flex;
+    justify-content: center;
+}
+.carousel-size {
+    position: relative;
+    left: 50%; /*mueve un 50% desde su borde izquierdo*/
+    transform: translateX(-50%); /*muevo hacia la izquiera un 50% del tamano de la misma imagen*/
+    height: 500px;
+    width: auto;
+}
+
+
+/*acordeon*/
+.accordion-button{
+    background-color: transparent ;
+    color: black ;
+}
+.accordion-button:not(.collapsed){
+    background-color: transparent ;
+    color: black ;
+}
+.accordion-item {
+    background-color: transparent;
+}
+
+.accordion-item a {
+    color: #999950;
+    text-decoration: none;
+}
+.accordion-item a:hover {
+    color: #e50067;
+}

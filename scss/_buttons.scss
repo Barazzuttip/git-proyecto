@@ -1,0 +1,30 @@
+/*boton del nav*/
+.button-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: #999950;
+    border: none;
+    padding: 1%;
+    font-size: 16;
+    &:hover {
+    color: #e50067;
+    background-color: rgba(0,0,0,0);
+    }
+    &:active {
+        color: #e50067  !important; /*por algun motivo prioriza el estilo de bootstrap*/
+        background-color: rgba(0,0,0,0)  !important;
+    }
+    .show{
+        color: #e50067;
+        background-color: rgba(0,0,0,0);
+    }
+}
+.btn-op {
+    background-color: transparent;
+    &:hover{
+        color: #e50067;
+        background-color: rgba(0,0,0,0.2);
+    }
+}

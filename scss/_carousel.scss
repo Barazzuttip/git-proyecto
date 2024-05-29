@@ -1,0 +1,22 @@
+.carousel-item {
+    height: 650px;
+    width: 100%;
+    .carousel-size {
+        position: relative;
+        left: 50%; /*mueve un 50% desde su borde izquierdo*/
+        transform: translateX(-50%); /*muevo hacia la izquiera un 50% del tamano de la misma imagen*/
+        height: 500px;
+        width: auto;
+    }
+    .carousel-caption{
+        display: flex;
+        justify-content: center;
+    }
+    a{
+        color: #999950;
+        text-decoration: none;
+        &:hover {
+            color: #e50067;
+        }
+    }
+}

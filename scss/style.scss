@@ -1,0 +1,21 @@
+/*fuentes*/
+@font-face {
+    font-family: 'graf';
+    src: url(../assets/snikers.ttf);
+}
+@font-face {
+    font-family: 'circus';
+    src: url(../assets/circusworlddemoregular.ttf);
+}
+@font-face {
+    font-family: 'circus-text';
+    src: url(../assets/electriccircus.ttf);
+}
+/*imports*/
+
+@import "accordion";
+@import "buttons";
+@import "carousel";
+@import "dropdowns";
+@import "grids";
+@import "layouts";
