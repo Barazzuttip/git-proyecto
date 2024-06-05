@@ -1,0 +1,33 @@
+/*fuentes*/
+@font-face {
+    font-family: 'graf';
+    src: url(../assets/snikers.ttf);
+}
+@font-face {
+    font-family: 'circus';
+    src: url(../assets/circusworlddemoregular.ttf);
+}
+@font-face {
+    font-family: 'circus-text';
+    src: url(../assets/electriccircus.ttf);
+}
+
+/*------------------------------------------------*/
+.lista-descriptiva {
+    list-style-type: none;
+    li {
+    font-size: x-large;
+    }
+}
+.h2-header {
+    @include titlefonts (3,64px);
+    text-align: center;
+}
+
+.h3-clases {
+    @include titlefonts (2,32px);
+}
+
+.h3-carousel {
+    @include titlefonts (3,32px);
+}

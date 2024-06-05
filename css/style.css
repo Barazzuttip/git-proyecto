@@ -1,17 +1,6 @@
-/*fuentes*/
-@font-face {
-  font-family: "graf";
-  src: url(../assets/snikers.ttf);
-}
-@font-face {
-  font-family: "circus";
-  src: url(../assets/circusworlddemoregular.ttf);
-}
-@font-face {
-  font-family: "circus-text";
-  src: url(../assets/electriccircus.ttf);
-}
 /*imports*/
+/*fuentes para titulos*/
+/*colors*/
 .accordion-item {
   background-color: transparent;
 }
@@ -21,9 +10,6 @@
 }
 .accordion-item a:hover {
   color: #e50067;
-}
-.accordion-item .h3-accordion {
-  /*acomodar fuentes h3 acordeon*/
 }
 .accordion-item .h3-accordion .accordion-button {
   background-color: transparent;
@@ -46,16 +32,16 @@
   font-size: 16;
 }
 .button-style:hover {
+  background-color: transparent;
   color: #e50067;
-  background-color: rgba(0, 0, 0, 0);
 }
 .button-style:active {
-  color: #e50067 !important; /*por algun motivo prioriza el estilo de bootstrap*/
-  background-color: rgba(0, 0, 0, 0) !important;
-}
-.button-style .show {
+  background-color: transparent;
   color: #e50067;
-  background-color: rgba(0, 0, 0, 0);
+}
+.button-style.show {
+  background-color: transparent;
+  color: #e50067;
 }
 
 .btn-op {
@@ -67,8 +53,8 @@
 }
 
 .carousel-item {
-  height: 650px;
   width: 100%;
+  height: 650px;
 }
 .carousel-item .carousel-size {
   position: relative;
@@ -91,6 +77,72 @@
 
 .drop-op {
   background-image: linear-gradient(to top, #e50067, #00e5d2);
+}
+
+/*fuentes*/
+@font-face {
+  font-family: "graf";
+  src: url(../assets/snikers.ttf);
+}
+@font-face {
+  font-family: "circus";
+  src: url(../assets/circusworlddemoregular.ttf);
+}
+@font-face {
+  font-family: "circus-text";
+  src: url(../assets/electriccircus.ttf);
+}
+/*------------------------------------------------*/
+.lista-descriptiva {
+  list-style-type: none;
+}
+.lista-descriptiva li {
+  font-size: x-large;
+}
+
+.h2-header {
+  font-family: "circus-text";
+  font-size: 64px;
+  text-align: center;
+}
+
+.h3-clases, .accordion-item .h3-accordion {
+  font-family: "circus";
+  font-size: 32px;
+}
+
+.h3-carousel {
+  font-family: "circus-text";
+  font-size: 32px;
+}
+
+.formato-flyer {
+  display: flex;
+  align-items: center;
+}
+.formato-flyer img {
+  margin-bottom: 20px;
+}
+.formato-flyer p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: larger;
+}
+.formato-flyer a {
+  color: #999950;
+  text-decoration: none;
+}
+.formato-flyer a:hover {
+  color: #e50067;
+}
+
+.art-size {
+  width: 25%;
+  height: 25%;
+}
+
+.nosotros-img {
+  width: 20%;
+  height: 20%;
 }
 
 /*grid nosotros*/
@@ -151,6 +203,58 @@
   font-size: large;
 }
 
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid black;
+  margin-top: 10px;
+}
+.footer .footer-izq {
+  margin-left: 25px;
+}
+.footer .footer-izq .footer-title {
+  font-family: graf;
+  font-size: xx-large;
+  display: flex;
+}
+.footer .footer-izq .footer-size {
+  height: 10%;
+  width: 10%;
+}
+.footer .footer-der {
+  margin-right: 15px;
+}
+.footer .footer-der a {
+  color: #999950;
+  text-decoration: none;
+}
+
+body {
+  font-size: 16px;
+  background-image: linear-gradient(to top, #e50067, #00e5d2);
+}
+body .main-style {
+  margin-left: 2%;
+}
+body .submenu {
+  list-style-type: none;
+  text-align: center;
+}
+body .submenu li {
+  display: inline-block;
+  font-family: "circus";
+  font-size: large;
+  padding: 1%;
+}
+body .submenu li a {
+  text-decoration: none;
+  color: #999950;
+}
+body .submenu li a:hover {
+  color: #e50067;
+}
+
 header {
   /*font-size: 16px;*/
   /*background-image: linear-gradient(to top, #e50067, #00e5d2);*/
@@ -193,42 +297,77 @@ header nav .menu li a {
 header nav .menu li a:hover {
   color: #e50067;
 }
-header .h2-header {
-  font-family: "circus-text";
-  font-size: 64px;
-  text-align: center;
-}
 
-body {
-  font-size: 16px;
-  background-image: linear-gradient(to top, #e50067, #00e5d2);
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
+  h1 {
+    font-family: "graf"; /*fuente del titulo*/
+    font-size: 80px;
+    margin: 0;
+  }
+  h2 {
+    font-size: 64px;
+  }
+  .menu a {
+    font-size: 15px;
+  }
+  .button-style {
+    font-size: 15px;
+  }
+  .submenu a {
+    font-size: 16px;
+  }
+  .grid-container-index .grid-item-index:first-child {
+    grid-row: 1/2;
+    width: auto;
+  }
+  .grid-container-index .grid-item-index:nth-child(2) {
+    align-items: flex-start;
+  }
+  .footer-izq img {
+    width: 25%;
+    height: 25%;
+  }
+  .carousel-caption {
+    font-size: 0.75rem;
+    position: static;
+    margin-top: 25px;
+  }
 }
-
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-top: 2px solid black;
-  margin-top: 10px;
-}
-.footer .footer-izq {
-  margin-left: 25px;
-}
-.footer .footer-izq .footer-title {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: small;
-  display: flex;
-}
-.footer .footer-izq .footer-size {
-  height: 10%;
-  width: 10%;
-}
-.footer .footer-der {
-  margin-right: 15px;
-}
-.footer .footer-der a {
-  color: #999950;
-  text-decoration: none;
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-family: "graf"; /*fuente del titulo*/
+    font-size: 50px;
+    margin: 0;
+  }
+  .menu a {
+    font-size: 10px;
+  }
+  .submenu a {
+    font-size: 10px;
+  }
+  .button-style {
+    font-size: 10px;
+  }
+  .grid-container-index .grid-item-index:first-child {
+    grid-row: 1/2;
+    width: auto;
+    height: 50%;
+  }
+  .body-titles {
+    font-size: smaller;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  .footer-izq img {
+    width: 50%;
+    height: 50%;
+  }
+  .carousel-caption {
+    font-size: 0.75rem;
+    position: static;
+    margin-top: 25px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

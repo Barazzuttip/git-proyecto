@@ -4,11 +4,11 @@
         color: #999950;
         text-decoration: none;
         &:hover {
-            color: #e50067;
+            color: $hover-color;
         }
     }
     .h3-accordion {
-        /*acomodar fuentes h3 acordeon*/
+        @extend .h3-clases;
         .accordion-button{
             background-color: transparent ;
             color: black ;

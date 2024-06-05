@@ -38,46 +38,6 @@ header {
                     }
                 }
             }
-           
-        }
-    }
-    .h2-header {
-        font-family: 'circus-text';
-        font-size: 64px;
-        text-align: center;
-    }
-}
-
-
-body {
-    font-size: 16px;
-    background-image: linear-gradient(to top, #e50067, #00e5d2);
-}
-
-
-.footer {
-    display: flex; 
-    align-items: center;
-    justify-content: space-between;
-    border-top: 2px solid black;
-    margin-top: 10px;
-    .footer-izq {
-        margin-left: 25px;
-        .footer-title {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: small;
-            display: flex;
-        }
-        .footer-size {
-            height: 10%;
-            width: 10%;
-        }
-    }
-    .footer-der{
-        margin-right: 15px;
-        a{
-            color: #999950;
-            text-decoration: none;
         }
     }
 }

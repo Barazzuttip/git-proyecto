@@ -1,6 +1,5 @@
 .carousel-item {
-    height: 650px;
-    width: 100%;
+    @include sizes(100%,650px);
     .carousel-size {
         position: relative;
         left: 50%; /*mueve un 50% desde su borde izquierdo*/
@@ -13,10 +12,10 @@
         justify-content: center;
     }
     a{
-        color: #999950;
+        color: $link-color;
         text-decoration: none;
         &:hover {
-            color: #e50067;
+            color: $hover-color;
         }
     }
 }

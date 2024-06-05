@@ -1,0 +1,26 @@
+.footer {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid black;
+    margin-top: 10px;
+    .footer-izq {
+        margin-left: 25px;
+        .footer-title {
+            font-family:graf;
+            font-size: xx-large;
+            display: flex;
+        }
+        .footer-size {
+            height: 10%;
+            width: 10%;
+        }
+    }
+    .footer-der{
+        margin-right: 15px;
+        a{
+            color: #999950;
+            text-decoration: none;
+        }
+    }
+}

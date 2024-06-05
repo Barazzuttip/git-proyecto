@@ -1,0 +1,24 @@
+@mixin sizes ($width,$height) {
+    width: $width;
+    height: $height;
+}
+
+
+/*fuentes para titulos*/
+@mixin titlefonts ($type, $size) {
+    @if $type == 1 {
+        font-family: 'graf';
+    }
+    @else if $type == 2 {
+        font-family: 'circus'
+    }
+    @else if $type == 3 {
+        font-family: 'circus-text';
+    }
+    font-size: $size;
+}
+
+@mixin btn-action {
+    background-color: transparent;
+    color: $hover-color;
+}

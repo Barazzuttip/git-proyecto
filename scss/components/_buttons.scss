@@ -4,27 +4,24 @@
     align-items: center;
     justify-content: center;
     background-color: transparent;
-    color: #999950;
+    color: $link-color;
     border: none;
     padding: 1%;
     font-size: 16;
     &:hover {
-    color: #e50067;
-    background-color: rgba(0,0,0,0);
+        @include btn-action;
     }
     &:active {
-        color: #e50067  !important; /*por algun motivo prioriza el estilo de bootstrap*/
-        background-color: rgba(0,0,0,0)  !important;
+        @include btn-action;
     }
-    .show{
-        color: #e50067;
-        background-color: rgba(0,0,0,0);
+    &.show{
+        @include btn-action;
     }
 }
 .btn-op {
     background-color: transparent;
     &:hover{
-        color: #e50067;
+        color: $hover-color;
         background-color: rgba(0,0,0,0.2);
     }
 }

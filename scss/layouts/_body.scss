@@ -1,0 +1,26 @@
+body {
+    font-size: 16px;
+    background-image: linear-gradient(to top, #e50067, #00e5d2);
+    .main-style {
+        margin-left: 2%;
+    }
+    .submenu {
+        list-style-type: none;
+        text-align: center;
+        li {
+            display: inline-block;
+            font-family: 'circus';
+            font-size: large;
+            padding: 1%;
+            a{
+                text-decoration: none;
+                color: #999950;
+                &:hover {
+                    color: #e50067;
+                }
+            }
+        }
+    }
+    
+    
+}
