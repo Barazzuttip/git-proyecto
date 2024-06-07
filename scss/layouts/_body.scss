@@ -1,6 +1,6 @@
 body {
     font-size: 16px;
-    background-image: linear-gradient(to top, #e50067, #00e5d2);
+    background-image: linear-gradient(to bottom, #ffd818f3 ,#fa572a);
     .main-style {
         margin-left: 2%;
     }
@@ -14,9 +14,9 @@ body {
             padding: 1%;
             a{
                 text-decoration: none;
-                color: #999950;
-                &:hover {
-                    color: #e50067;
+                color: $link-color;
+                &:hover{
+                    color: $hover-color;            
                 }
             }
         }

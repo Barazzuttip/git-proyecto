@@ -8,6 +8,7 @@
     border: none;
     padding: 1%;
     font-size: 16;
+    @include link-action(24px);
     &:hover {
         @include btn-action;
     }
@@ -20,8 +21,11 @@
 }
 .btn-op {
     background-color: transparent;
+    a{
+        color: black;
+    }
     &:hover{
         color: $hover-color;
-        background-color: rgba(0,0,0,0.2);
+        background-color: rgba(0,0,0,0);
     }
 }

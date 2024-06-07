@@ -19,6 +19,18 @@
 }
 
 @mixin btn-action {
-    background-color: transparent;
+    background-color: transparent !important; /*sin !important no toma el comando para active*/
     color: $hover-color;
+}
+
+@mixin link-action ($newsize){
+    transition: font-size 0.75s;
+    &:hover{
+        color: $hover-color;
+        font-size: $newsize;
+    }
+    &.show {
+        color: $hover-color;
+        font-size: $newsize;    
+    }
 }

@@ -19,8 +19,9 @@
     .footer-der{
         margin-right: 15px;
         a{
-            color: #999950;
+            color: $link-color;
             text-decoration: none;
+            @include link-action (18px);
         }
     }
 }
