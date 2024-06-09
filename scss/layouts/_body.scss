@@ -13,6 +13,10 @@ body {
             font-size: large;
             padding: 1%;
             a{
+                animation-name: opacity-anim;
+                animation-duration: 4s;
+                animation-iteration-count: initial;
+                animation-timing-function: ease-in;
                 text-decoration: none;
                 color: $link-color;
                 &:hover{

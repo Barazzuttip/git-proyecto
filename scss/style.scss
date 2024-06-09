@@ -1,4 +1,6 @@
 /*imports*/
+@import "media-queries/mediaq";
+
 @import "utils/mixins.scss";
 @import "utils/variables.scss";
 
@@ -21,6 +23,5 @@
 @import "layouts/header";
 
 
-@import "media-queries/mediaq";
 
 @import "animations/animations";

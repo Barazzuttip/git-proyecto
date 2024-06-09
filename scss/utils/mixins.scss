@@ -34,3 +34,9 @@
         font-size: $newsize;    
     }
 }
+@mixin logo-anim {
+    transition: transform 1s;
+    &:hover {
+        transform: rotate(720deg) scale(2,2);
+    }
+}
