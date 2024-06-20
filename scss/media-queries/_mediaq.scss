@@ -5,6 +5,10 @@
     h2 {
         font-size: 64px;
     }
+    .h3-clases {
+        font-size: 24px !important;
+         font-family: 'Courier New', Courier, monospace;
+    }
     .menu .a-nav{
         font-size: 15px;
     }
@@ -35,6 +39,16 @@
         position: static;
         margin-top: 25px;
     }
+    .grid-container-nos{
+        .grid-item-nos {
+            &:not(:first-child){
+                overflow: visible;
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
         
 }
     
@@ -44,6 +58,9 @@
         h1 {
             font-size: 25px !important; 
             }
+    }
+    .h3-clases {
+        font-size: 16px !important;
     }
     .menu .a-nav{
         font-size: 10px !important;
@@ -81,5 +98,15 @@
         font-size: 0.75rem;
         position: static;
         margin-top: 25px;
+    }
+    .grid-container-nos{
+        .grid-item-nos {
+            &:not(:first-child){
+                overflow: visible;
+                img {
+                    display: none;
+                }
+            }
+        }
     }
 }
